@@ -1,132 +1,1508 @@
-<!DOCTYPE html> <!-- Declaração do tipo de documento -->
-<html lang="pt-br"> <!-- Elemento raiz do HTML com atributo de idioma definido como português brasileiro -->
-<head> <!-- Início do cabeçalho da página -->
-  <meta charset="UTF-8"> <!-- Meta tag para definir o conjunto de caracteres UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para definir a largura da viewport e a escala inicial -->
-  <title>Menu Bootstrap com Conteúdo</title> <!-- Título da página -->
-  <!-- Adicionando Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Link para o arquivo CSS do Bootstrap -->
-  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilo CSS personalizado -->
-  <style>
-    /* Estilos personalizados */
-    .content {
-      padding: 20px;
-    }
-  </style> <!-- Estilos personalizados -->
-</head>
-<body> <!-- Início do corpo da página -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Navbar Bootstrap -->
-    <div class="container-fluid"> <!-- Container Bootstrap -->
-      <!-- Logo/Brand -->
-      <a class="navbar-brand" href="#">Logo</a> <!-- Link da marca/logo -->
-      <!-- Botão de toggle (para mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Botão de alternância para dispositivos móveis -->
-        <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de alternância -->
-      </button>
-      <!-- Itens do menu -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Menu de navegação -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- Lista não ordenada de itens de navegação -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Item 1</a> <!-- Item de menu 1 -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Item 2</a> <!-- Item de menu 2 -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Item 3</a> <!-- Item de menu 3 -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Item 4</a> <!-- Item de menu 4 -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Item 5</a> <!-- Item de menu 5 -->
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<html>
+  <head>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="javascript.js" defer></script>
+    <script src="jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous" />
+    <link rel="icon" href="./images/SiteIcon/siteicon.jpg" />
 
-  <!-- Conteúdo -->
-  <div class="content"> <!-- Div de conteúdo personalizado -->
-    <div class="container"> <!-- Container Bootstrap -->
-      <h2>Conteúdo da Página</h2> <!-- Título do conteúdo da página -->
-<div class="row"><!-- Linha Bootstrap -->
-    <div class="col-md-2"><!-- Coluna Bootstrap (tamanho pequeno) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet" />
+    <!-- swiper-->
 
-    </div>
-    <div class="col-md-8"><!-- Coluna Bootstrap (tamanho grande) -->
-<!-- Carrossel de Imagens -->
-<div id="carouselExample" class="carousel slide"> <!-- Div do carrossel Bootstrap -->
-    <div class="carousel-inner"> <!-- Contêiner para os slides do carrossel -->
-      <div class="carousel-item active"> <!-- Item do carrossel ativo -->
-        <img src="https://via.placeholder.com/400" class="d-block w-100" alt="..."> <!-- Imagem do slide 1 -->
-      </div>
-      <div class="carousel-item"> <!-- Item do carrossel -->
-        <img src="https://via.placeholder.com/400" class="d-block w-100" alt="..."> <!-- Imagem do slide 2 -->
-      </div>
-      <div class="carousel-item"> <!-- Item do carrossel -->
-        <img src="https://via.placeholder.com/400" class="d-block w-100" alt="..."> <!-- Imagem do slide 3 -->
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <!-- Botão de controle do slide anterior -->
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Ícone do botão de controle do slide anterior -->
-      <span class="visually-hidden">Previous</span> <!-- Texto de navegação do slide anterior (somente para leitores de tela) -->
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"> <!-- Botão de controle do próximo slide -->
-      <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Ícone do botão de controle do próximo slide -->
-      <span class="visually-hidden">Next</span> <!-- Texto de navegação do próximo slide (somente para leitores de tela) -->
-    </button>
-  </div>
-  <div class="col-md-2"> <!-- Coluna Bootstrap (tamanho médio) vazia para espaçamento -->
-  </div>
-  
-      </div>
-</div>
-      <!-- Cards -->
-      <div class="row"> <!-- Linha Bootstrap -->
-        <div class="col-md-4"> <!-- Coluna Bootstrap (tamanho médio) -->
-          <div class="card"> <!-- Card Bootstrap -->
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagem do Card 1"> <!-- Imagem do card 1 -->
-            <div class="card-body"> <!-- Corpo do card -->
-              <h5 class="card-title">Card 1</h5> <!-- Título do card 1 -->
-              <p class="card-text">Este é o conteúdo do Card 1. Você pode adicionar texto aqui para descrever o card.</p> <!-- Texto do card 1 -->
-              <a href="#" class="btn btn-primary">Botão 1</a> <!-- Botão do card 1 -->
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="site-header-con">
+      <div class="site-header">
+        <a href="#" class="site-name-link"
+          ><img src="./images/sitename.png" alt="site name" class="site-name"
+        /></a>
+        <div class="header-right-con active-header">
+          <a href="#" class="header-buttons">Home</a>
+          <a href="#" class="header-buttons">Contato</a>
+          <div class="call-profile"><i class="far fa-user"></i></div>
+          <div class="call-search"><i class="fas fa-search"></i></div>
+          <div class="search-con">
+            <input type="text" placeholder="search" class="search-input" />
+            <i class="fas fa-search"></i>
           </div>
         </div>
-        <div class="col-md-4"> <!-- Coluna Bootstrap (tamanho médio) -->
-          <div class="card"> <!-- Card Bootstrap -->
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagem do Card 2"> <!-- Imagem do card 2 -->
-            <div class="card-body"> <!-- Corpo do card -->
-              <h5 class="card-title">Card 2</h5> <!-- Título do card 2 -->
-              <p class="card-text">Este é o conteúdo do Card 2. Você pode adicionar texto aqui para descrever o card.</p> <!-- Texto do card 2 -->
-            </div>
+        <div class="mobile-ver-close-but"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+
+    <div
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="swiper-img" src="./images/slide1.jpg" />
+          <div class="slide-poster-items">
+            <a href="#" class="poster-link">
+              <h1 class="slide-movie-name">Breaking Bad</h1>
+            </a>
+            <span>2008</span>
+            <a href="#" class="watch-movie">
+              <div>watch now</div>
+            </a>
           </div>
         </div>
-        <div class="col-md-4"> <!-- Coluna Bootstrap (tamanho médio) -->
-          <div class="card"> <!-- Card Bootstrap -->
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagem do Card 3"> <!-- Imagem do card 3 -->
-            <div class="card-body"> <!-- Corpo do card -->
-              <h5 class="card-title">Card 3</h5> <!-- Título do card 3 -->
-              <p class="card-text">Este é o conteúdo do Card 3. Você pode adicionar texto aqui para descrever o card.</p> <!-- Texto do card 3 -->
-            </div>
+        <div class="swiper-slide">
+          <img class="swiper-img" src="./images/slide2.jpg" />
+          <div class="slide-poster-items">
+            <a href="#" class="poster-link">
+              <h1 class="slide-movie-name">Peaky Blinders</h1>
+            </a>
+            <span>2013</span>
+            <a href="#" class="watch-movie">
+              <div>watch now</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-img" src="./images/slide3.jpg" />
+          <div class="slide-poster-items">
+            <a href="#" class="poster-link">
+              <h1 class="slide-movie-name">Game Of Thrones</h1>
+            </a>
+            <span>2011</span>
+            <a href="#" class="watch-movie">
+              <div>watch now</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-img" src="./images/slide4.jpg" />
+          <div class="slide-poster-items">
+            <a href="#" class="poster-link">
+              <h1 class="slide-movie-name">The Mandalorian</h1>
+            </a>
+            <span>2019</span>
+            <a href="#" class="watch-movie">
+              <div>watch now</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="swiper-img" src="./images/slide5.jpg" />
+          <div class="slide-poster-items">
+            <a href="#" class="poster-link">
+              <h1 class="slide-movie-name">The Witcher</h1>
+            </a>
+            <span>2019</span>
+            <a href="#" class="watch-movie">
+              <div>watch now</div>
+            </a>
           </div>
         </div>
       </div>
-      
-      <!-- Texto abaixo dos cards -->
-      <p>
-        Aqui está um conteúdo de exemplo para demonstrar como adicionar texto e imagem à página usando Bootstrap.
-      </p> <!-- Parágrafo de texto -->
-      <img src="https://via.placeholder.com/400" class="img-fluid" alt="Imagem de Exemplo"> <!-- Imagem de exemplo -->
-      <p>
-        Este é um texto de exemplo. Você pode adicionar mais texto ou personalizar conforme necessário.
-      </p> <!-- Parágrafo de texto -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-  </div>
 
-  <!-- Adicionando Bootstrap JS (opcional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Script do Bootstrap -->
-</body>
+    <div class="site-display">
+      <!-- first table new episodes  -->
+      <div class="episode-box-con">
+        <div class="ep-box-title">
+          <i class="fas fa-film"></i><a href="#">Séries em destaque</a>
+        </div>
+
+        <div class="episode-con">
+          <!-- box 1 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Centenas de jogadores sem dinheiro aceitam um estranho convite para competir em jogos infantis. Lá dentro, um prêmio tentador o aguarda com apostas altas e mortais. Um jogo de sobrevivência que tem em jogo um enorme prêmio de 45,6 bilhões de won.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.1</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Squid Game">Squid Game</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewEpFolder/squid-game.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 2 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Lúcifer Morningstar decidiu que já está farto de ser o servo zeloso no Inferno e decide passar algum tempo na Terra para compreender melhor a humanidade. Ele se estabelece em Los Angeles - a Cidade dos Anjos.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.1</div>
+                </div>
+                <div class="years">2016</div>
+              </div>
+              <h1 class="episode-title" title="Lucifer">Lucifer</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewEpFolder/Lucifer.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1" Entediado com a vida nas trevas, Lucifer se muda para Los Angeles, abre um bar e faz amizade com uma investigadora da polícia.
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="episode-box">
+            <!-- box 3 -->
+            <div class="episode-box-description-con">
+              <p>
+                Décadas após a luta no All Valley Karate Tournament de 1984, Daniel LaRusso e Johnny Lawrence, de meia-idade, encontram-se novamente rivais nas artes marciais.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.6</div>
+                </div>
+                <div class="years">2018</div>
+              </div>
+              <h1 class="episode-title" title="Cobra Kai">Cobra Kai</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewEpFolder/Cobra-Kai.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 4 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Quando um menino desaparece, sua mãe, um chefe de polícia e seus amigos devem enfrentar terríveis forças sobrenaturais para recuperá-lo.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.7</div>
+                </div>
+                <div class="years">2016</div>
+              </div>
+              <h1 class="episode-title" title="Stranger Things">
+                Stranger Things
+              </h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewEpFolder/stanger-things.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 5 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Um grupo incomum de ladrões tenta realizar o roubo mais perfeito da história espanhola - roubando 2,4 bilhões de euros da Casa da Moeda Real da Espanha.
+             </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.2</div>
+                </div>
+                <div class="years">2017</div>
+              </div>
+              <h1 class="episode-title" title="La Casa De Papel">
+                La Casa De Papel
+              </h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewEpFolder/LaCasaDePapel.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end of episodes  -->
+
+      <!-- new movies -->
+
+      <div class="new-movie-con">
+        <div class="ep-box-title">
+          <i class="fas fa-film"></i><a href="#">Novos filmes</a>
+                </div>
+
+        <div class="episode-con">
+          <!-- box 1 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Eddie Brock attempts to reignite his career by interviewing
+                serial killer Cletus Kasady, who becomes the host of the
+                symbiote Carnage and escapes prison after a failed execution.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>6.1</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Venom: Let There Be Carnage">
+                Venom: Let There Be Carnage
+              </h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewMovie/venom2.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 2 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>An Interpol agent tracks the world's most wanted art thief.</p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>6.4</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Red Notice">Red Notice</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewMovie/red-notice.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="episode-box">
+            <!-- box 3 -->
+            <div class="episode-box-description-con">
+              <p>
+                On a post-apocalyptic earth, a robot, built to protect the life
+                of his creator's beloved dog, learns about life, love,
+                friendship and what it means to be human.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>6.9</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Finch">Finch</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewMovie/finch.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 4 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Feature adaptation of Frank Herbert's science fiction novel
+                about the son of a noble family entrusted with the protection of
+                the most valuable asset and most vital element in the galaxy.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.2</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Dune">Dune</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewMovie/Dune.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 5 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                Shang-Chi, the master of weaponry-based Kung Fu, is forced to
+                confront his past after being drawn into the Ten Rings
+                organization.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>7.6</div>
+                </div>
+                <div class="years">2021</div>
+              </div>
+              <h1 class="episode-title" title="Shang-Chi">Shang-Chi</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/NewMovie/shang-chi.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Movies  -->
+      <div class="movie-box-con">
+        <div class="ep-box-title">
+          <i class="fas fa-film"></i><a href="#">Melhores filmes</a>
+        </div>
+
+        <div class="episode-con">
+          <!-- box 1 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                A team of explorers travel through a wormhole in space in an
+                attempt to ensure humanity's survival.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.6</div>
+                </div>
+                <div class="years">2014</div>
+              </div>
+              <h1 class="episode-title" title="Interstellar">Interstellar</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/TopMovies/interstelar.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 2 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                When the creator of a virtual reality called the OASIS dies, he
+                makes a posthumous challenge to all OASIS users to find his
+                Easter Egg, which will give the finder his fortune and control
+                of his world.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>7.4</div>
+                </div>
+                <div class="years">2018</div>
+              </div>
+              <h1 class="episode-title" title="Ready Player One">
+                Ready Player One
+              </h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/TopMovies/RPOne.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="episode-box">
+            <!-- box 3 -->
+            <div class="episode-box-description-con">
+              <p>
+                A thief who steals corporate secrets through the use of
+                dream-sharing technology is given the inverse task of planting
+                an idea into the mind of a C.E.O., but his tragic past may doom
+                the project and his team to disaster.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.8</div>
+                </div>
+                <div class="years">2010</div>
+              </div>
+              <h1 class="episode-title" title="Inception">Inception</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/TopMovies/inception.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 4 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                When a beautiful stranger leads computer hacker Neo to a
+                forbidding underworld, he discovers the shocking truth--the life
+                he knows is the elaborate deception of an evil
+                cyber-intelligence.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>8.7</div>
+                </div>
+                <div class="years">1999</div>
+              </div>
+              <h1 class="episode-title" title="The Matrix">The Matrix</h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/TopMovies/TheMatrix.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- box 5 -->
+          <div class="episode-box">
+            <div class="episode-box-description-con">
+              <p>
+                When the menace known as the Joker wreaks havoc and chaos on the
+                people of Gotham, Batman must accept one of the greatest
+                psychological and physical tests of his ability to fight
+                injustice.
+              </p>
+              <div class="years-imdb">
+                <div class="imdb">
+                  <i class="fab fa-imdb"></i>
+                  <div>9.0</div>
+                </div>
+                <div class="years">2008</div>
+              </div>
+              <h1 class="episode-title" title="The Dark Knight">
+                The Dark Knight
+              </h1>
+            </div>
+            <a href="#">
+              <img
+                src="./images/TopMovies/TheDarkKnight.jpg"
+                alt="img"
+                class="play-img-select" />
+              <svg width="70" height="70" class="img-play-but">
+                <g>
+                  <title>background</title>
+                  <rect
+                    fill="none"
+                    id="canvas_background"
+                    height="72"
+                    width="72"
+                    y="-1"
+                    x="-1" />
+                  <g
+                    display="none"
+                    overflow="visible"
+                    y="0"
+                    x="0"
+                    height="100%"
+                    width="100%"
+                    id="canvasGrid">
+                    <rect
+                      fill="url(#gridpattern)"
+                      stroke-width="0"
+                      y="0"
+                      x="0"
+                      height="100%"
+                      width="100%" />
+                  </g>
+                </g>
+                <g>
+                  <title>Layer 1</title>
+                  <ellipse
+                    ry="32.5"
+                    rx="32.5"
+                    id="svg_1"
+                    cy="34.999999"
+                    cx="35.000001"
+                    stroke-width="5"
+                    stroke="#ffffff"
+                    fill="none" />
+                  <ellipse
+                    rx="0.135135"
+                    id="svg_2"
+                    cy="51.068405"
+                    cx="89.999974"
+                    stroke-width="0.001"
+                    stroke="#FF0000"
+                    fill="#000" />
+                  <path
+                    stroke="#e3233e"
+                    transform="rotate(90 38.513511657714844,35.00000000000001) "
+                    id="svg_3"
+                    d="m23.648655,48.648642l14.864858,-27.297285l14.864858,27.297285l-29.729715,0z"
+                    stroke-width="4"
+                    fill="none" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="movie-countdown-con">
+      <div class="movie-countdown">
+        <div class="timer-container">
+          <div class="timer-circle">
+            <div class="timer-value days"></div>
+            <span>DAYS</span>
+          </div>
+          <div class="timer-circle">
+            <div class="timer-value hours"></div>
+            <span>HOURS</span>
+          </div>
+          <div class="timer-circle">
+            <div class="timer-value minutes"></div>
+            <span>MINS</span>
+          </div>
+          <div class="timer-circle">
+            <div class="timer-value seconds"></div>
+            <span>SECS</span>
+          </div>
+        </div>
+        <h2 class="timer-title">AVENGERS: THE KANG DYNASTY</h2>
+        <a href="#" class="timer-trailer-button"><div>Trailer</div></a>
+      </div>
+    </div>
+
+    <div class="site-display">
+      <div class="cast-slide-container">
+        <div class="cast-left-but"><i class="fas fa-chevron-left"></i></div>
+        <div class="cast-right-but"><i class="fas fa-chevron-right"></i></div>
+        <div class="cast-slide-display">
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/Robert-Downey-Jr.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Robert Downey Jr</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/KeanuReeves.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Keanu Reeves</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/MargotRobbie.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Margot Robbie</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/Scarlett Johansson.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Scarlett Johansson</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/ElizabethOlsen.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Elizabeth Olsen</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/ChrisEvans.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Chris Evans</h3>
+            </a>
+          </div>
+
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/angelinaJolie.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Angelina Jolie</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/denzelWashington.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Denzel Washington</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/JuliaRoberts.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Julia Roberts</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/NicoleKidman.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Nicole Kidman</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/GeorgeClooney.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">George Clooney</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/HughJackman.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Hugh Jackman</h3>
+            </a>
+          </div>
+          <div class="cast-slide">
+            <img
+              src="./images/castPhoto/ChristianBale.jpg"
+              class="cast-img"
+              alt="img" />
+            <a href="#">
+              <h3 class="cast-name">Christian Bale</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-con">
+      <div class="site-footer">
+        <div class="site-author">
+          Created by :
+          <a href="https://www.linkedin.com/in/nika-chiqovani-741787256/"
+            >Nika Chiqovani</a
+          >
+        </div>
+        <div class="site-gmail">
+          <i class="far fa-envelope"></i> :
+          <a href="mailto:chiqovani.nika01@gmail.com"
+            >Chiqovani.Nika01@Gmail.Com</a
+          >
+        </div>
+        <div class="site-born">© 2022</div>
+      </div>
+    </div>
+  </body>
 </html>
