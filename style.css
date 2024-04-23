@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #13212a;
+  background-color: #000000;
   box-sizing: border-box;
 }
 .site-display {
@@ -22,8 +22,8 @@ body {
 .site-header-con {
   height: 70px;
   width: 100%;
-  background-color: rgba(15, 25, 32, 0.4);
-  box-shadow: 0 -9px 10px rgb(200, 200, 200);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 -9px 10px rgb(0, 0, 0);
   position: fixed;
   top: 0px;
   z-index: 1000;
@@ -376,14 +376,14 @@ body {
 
 .movie-box-con {
   border-radius: 10px;
-  border: 20px solid #134264;
+  border: 20px solid #b3353565;
   padding-top: 25px;
   margin-top: 60px;
   padding-bottom: 15px;
   margin-left: -20px;
   width: 100%;
   height: auto;
-  background-color: #134264;
+  background-color: #a52d2d9f;
   /* #2980b9 */
 }
 
